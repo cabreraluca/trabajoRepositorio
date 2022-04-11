@@ -1,0 +1,279 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    width: 100%;
+}
+
+
+
+/* CSS del index*/
+
+.contenedorPrincipal{
+    height: 100vh;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas:"header header header header"
+                        "section section section section"
+                        "main main main main"
+                        "footer footer footer footer";
+}
+
+main{
+    grid-area: main;
+}
+
+.cabecera a img{
+    height: 100%;
+    width: 200px;
+    padding-top: 20px;
+}
+
+.cabecera{
+    grid-area: header;
+    width: 100%;
+    display: grid;
+    margin: 0;
+    padding: 0;
+    top:0;
+    z-index: 2;
+}
+
+.menu{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    justify-items: center;
+    padding-left: 180px;   
+}
+.menu li{
+    width: 100%;
+    display: grid;
+    top: 0;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 20px 10px 20px;
+    font-size: medium;
+    color: white;
+}
+footer{
+    grid-area: footer;
+    margin-top: 30px;
+    text-align: center;
+    color: white;
+}
+section{
+    grid-area: section;
+    display: grid;
+    align-items: center;
+    background-repeat: no-repeat ;
+    background-position: center -80px;
+    background-image: url(../img/fondoPrincipal3.jpg);
+    height: 600px;
+    width: 100%;
+}
+.productos{
+    display: grid;
+    justify-content: center;
+    height: auto;
+    grid-template-columns: repeat(6, 1fr);
+    width: 100%;
+    gap: 25px;
+    text-align: center;
+    color: white;
+}
+
+.ingresos{
+    padding: 30px;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+
+a{
+    text-decoration: none;
+}
+
+iframe{ 
+    display: inline;
+    width: 100%;
+    justify-content: center;
+}
+
+.encontrarnos{
+    padding: 30px;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+}
+
+.menuProductos li{
+    top: 0;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 30px 30px 10px 30px;
+    font-size: medium;
+    display: inline-block;
+    text-align: center;
+    color: white;
+}
+
+.ingresosProductos{
+    display: grid;
+    padding: 15px;
+    text-align: center;
+    color: white;
+    font-size: 50px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.productosProductos{
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(5, 1fr);
+    width: 100%;
+    gap: 25px;
+    text-align: center;
+    color: white;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.buzos{
+    display: grid;
+    justify-content: center;
+    height: auto;
+    grid-template-columns: repeat(6, 1fr);
+    width: 100%;
+    gap: 25px;
+    color: white;
+    text-align: center;
+}
+
+.buzosRemeras{
+    font-size: 70px;
+    text-align: center;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.nosotros img{
+    align-self: flex-start;
+}
+.parrafoNosotros{
+    padding: 20px;
+    font-size: x-large;
+    text-align: center;
+}
+.contactoNosotros{
+    text-decoration: underline;
+}
+
+.footerNosotros{
+    margin: 10px;
+}
+
+.contactanos{
+    padding: 30px;
+    text-align: center;
+}
+
+.footerContacto{
+    padding-top: 275px;
+    text-align: center;
+}
+
+.enviarForm{
+    padding-top: 15px;
+}
+
+.politica{
+    text-align: center;
+}
+
+/*media queries*/
+
+@media only screen and (max-width:768px){
+    .cabecera{
+        height: 10rem;
+    }
+    .cabecera a, .cabecera ul{
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+    .cabecera a img{
+        height: 80%;  
+    }
+    .menu{
+        display: flex;
+        justify-content: center;
+    }
+    .menu li{
+        font-size: 14px;
+    }
+    .productos div p{
+        font-size: 0.9rem;
+    }
+    .ingresos, .encontrarnos{
+        font-size: 25px;
+    }
+
+}
+
+@media only screen and (max-width:600px){
+    .contenedorPrincipal{
+        grid-template-areas: "header header header header"
+                             "main main main main"
+                             "footer footer footer footer";
+    }
+    section{
+        display: none;
+    }
+    .cabecera a, .cabecera ul{
+        display: flex;
+        justify-content: center;
+        padding: 0;
+    }
+    .cabecera a img{
+        height: 100%;  
+    }
+    .menu{
+        display: flex;
+        justify-content: center;
+    }
+    .menu li{
+        font-size: 9px;
+    }
+    .productos div p{
+        font-size: 0.6rem;
+    }
+    .ingresos, .encontrarnos{
+        font-size: 25px;
+    }
+    .ingresos{
+        padding-top: 0;
+    }
+    .ingresosProductos, .buzosRemeras{
+        font-size: 25px;
+    }
+    .ingresosProductos{
+        padding-top: 0;
+    }
+    .productosProductos div p{
+        font-size: 0.6rem;
+    }
+    .buzosRemeras{
+        margin-top: 30px;
+        margin-bottom: 15px;
+    }
+    .buzos div p{
+        font-size: 0.6rem;
+    }
+    .footerProductos{
+        margin-top: 15vh;
+        margin-bottom: 0;
+    }
+}
