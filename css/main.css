@@ -87,6 +87,10 @@ section{
     color: white;
 }
 
+.productos div:hover{
+    transform: scale(1.1, 1.1);
+}
+
 .ingresos{
     padding: 30px;
     text-align: center;
