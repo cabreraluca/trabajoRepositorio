@@ -89,6 +89,7 @@ section{
 
 .productos div:hover{
     transform: scale(1.1, 1.1);
+    
 }
 
 .ingresos{
@@ -138,7 +139,7 @@ iframe{
 .productosProductos{
     display: grid;
     justify-content: center;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(6, 1fr);
     width: 100%;
     gap: 25px;
     text-align: center;
