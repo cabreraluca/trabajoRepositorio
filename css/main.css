@@ -90,7 +90,6 @@ section{
 .productos div:hover{
     transform: scale(1.1, 1.1);
     transition: 0.3s;
-    
 }
 
 .ingresos{
@@ -146,6 +145,16 @@ iframe{
     text-align: center;
     color: white;
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.productosProductos div:hover{
+    transform: scale(1.1, 1.1);
+    transition: 0.3s;
+}
+
+.buzos div:hover{
+    transform: scale(1.1, 1.1);
+    transition: 0.3s;
 }
 
 .buzos{
@@ -277,7 +286,6 @@ iframe{
     }
     .productosProductos div p, .buzos div p, .productos div p{
         font-size: 0.9rem;
-        
     }
     .buzosRemeras{
         text-align: center;
